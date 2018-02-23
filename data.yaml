@@ -1,0 +1,40 @@
+users:
+  gt@gmail.com:
+    username: gt@gmail.com
+    articleIds:
+      - 1
+      - 2
+    commentIds:
+      - 1
+articles:
+  '1':
+    id: 1
+    title: pop
+    url: www.nytimes.com
+    username: gt@gmail.com
+    commentIds:
+      - 1
+    upvotedBy: []
+    downvotedBy:
+      - gt@gmail.com
+    comments: []
+  '2':
+    id: 2
+    title: new guy
+    url: www.reddit.com
+    username: gt@gmail.com
+    commentIds: []
+    upvotedBy: []
+    downvotedBy:
+      - gt@gmail.com
+nextArticleId: 3
+comments:
+  '1':
+    id: 1
+    body: nope
+    username: gt@gmail.com
+    articleId: 1
+    upvotedBy:
+      - gt@gmail.com
+    downvotedBy: []
+nextCommentId: 2
