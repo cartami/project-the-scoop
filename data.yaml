@@ -3,9 +3,10 @@ users:
     username: gt@gmail.com
     articleIds:
       - 1
-      - 2
+      - 3
     commentIds:
       - 1
+      - 2
 articles:
   '1':
     id: 1
@@ -18,16 +19,26 @@ articles:
     downvotedBy:
       - gt@gmail.com
     comments: []
-  '2':
-    id: 2
-    title: new guy
+  '2': null
+  '3':
+    id: 3
+    title: TRL
     url: www.reddit.com
     username: gt@gmail.com
-    commentIds: []
+    commentIds:
+      - 2
     upvotedBy: []
     downvotedBy:
       - gt@gmail.com
-nextArticleId: 3
+    comments:
+      - &ref_0
+        id: 2
+        body: Good job!
+        username: gt@gmail.com
+        articleId: 3
+        upvotedBy: []
+        downvotedBy: []
+nextArticleId: 4
 comments:
   '1':
     id: 1
@@ -37,4 +48,5 @@ comments:
     upvotedBy:
       - gt@gmail.com
     downvotedBy: []
-nextCommentId: 2
+  '2': *ref_0
+nextCommentId: 3
